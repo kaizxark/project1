@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link class = 'scroll-img' href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css' rel='stylesheet'>
+  <link rel = 'stylesheet' href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Black&White</title>
+</head>
+<body>
+  <div class="heropage">
+    <nav>
+      <img class = 'logo' src = 'images/logo.png'>
+      <h1 class = 'home' id = 'homeLink'>HOME</h1>
+      <h1 class = 'about' id = 'aboutLink'>ABOUT</h1>
+      <a href="portfolio.html" class = 'portfolio'>PORTFOLIO</a>
+      <a href = 'contact page/contact.html' target = '_blank' class = 'contact'>CONTACT</a>
+    </nav>
+
+    <div class="page1">
+      <div class="black-div1"></div>
+      <div class="black-div2"></div>
+      <h1>
+        BLACK & WHITE
+      </h1>
+      <p>WEBSITE</p>
+      <button>GET STARTED</button>
+      <img class = 'scroll-img' src = 'images/down-arrow.png'>
+    </div>
+
+    <div class="page2">
+      <img class = 'about-img' src = 'images/About.png'>
+      <div class = 'about-div'>ABOUT ME</div>
+      <p class = 'about-text'>Fueling creativity with Leonardo AI and Playground AI! As a passionate prompt engineer, I sculpt captivating realms of imagination into reality, crafting mesmerizing images that spark wonder. Join me on a journey through the extraordinary, where art and technology converge in breathtaking harmony.</p>
+      <a href = 'images/About.png' download = 'image.png'><button>DOWNLOAD MY RESUME ></button></a>
+    </div>
+
+    <div class="page3">
+      <div class="good-div">GOOD AT</div>
+      <div class = 'three-div'>
+        <div class = 'one'>
+          <img src = 'images/image1.jpg'>
+          <h1>Artistic Vision and Creativity</h1>
+          <p>Developing a strong artistic eye and creative flair is crucial. You should have a deep understanding of composition, color theory, lighting, and other artistic principles to guide your image generation process. Your ability to envision unique and captivating concepts will set your images apart.</p>
+        </div>
+        <div class = 'two'>
+          <img src = 'images/image2.jpg'>
+          <h1>Technical Proficiency with AI Tools</h1>
+          <p>Mastery of the technical aspects of Leonardo AI and Playground AI is essential. You should be well-versed in the tools' functionalities, settings, and options. This includes knowledge of different algorithms, styles, and techniques to manipulate and enhance images effectively.</p>
+        </div>
+        <div class = 'three'>
+          <img src = 'images/image3.jpg'>
+          <h1>Adaptability and Experimentation</h1>
+          <p>To create exceptional images, you need to be open to experimentation and willing to adapt your approach. Familiarity with different AI algorithms and their potential outcomes, combined with a willingness to iterate and refine your work, will enable you to refine your images and produce outstanding results.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const aboutLink = document.getElementById('aboutLink');
+
+    aboutLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default behavior of the link
+      const scrollPosition = 0.94 * window.innerHeight; // 90vh
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    });
+
+    const homeLink = document.getElementById('homeLink');
+
+    homeLink.addEventListener('click', (event) => {
+      event.preventDefault(); // Prevent the default behavior of the link
+      const scrollPosition = -0.94 * window.innerHeight; // 90vh
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const changeColorPosition = 0.94 * window.innerHeight;
+
+    if (scrollY >= changeColorPosition) {
+      homeLink.style.color = 'lightgray';
+      aboutLink.style.color = 'lightcoral';
+    } else {
+      homeLink.style.color = 'lightcoral';
+      aboutLink.style.color = 'lightgray';
+    }
+  });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+
+html, body {
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/chevron-down.css');
+
+nav {
+  display: flex;
+  position: fixed;
+  background-color: rgb(23, 18, 18);
+  height: 60px;
+  width: 95%;
+  color: lightgray;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 80px;
+  gap: 40px;
+  z-index: 10;
+}
+
+nav h1,
+nav a {
+  transition: all 0.2s, letter-spacing 0.3s;
+  cursor: pointer;
+  font-size: 20px;
+  color: lightgray;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav h1:hover,
+nav a:hover {
+  color: lightcoral;
+}
+
+nav h1:hover,
+nav a:hover {
+  opacity: 0.7;
+  font-size: 22px;
+}
+
+nav h1:active,
+nav a:active {
+  letter-spacing: 5px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-right: 1300px;
+  cursor: pointer;
+  position: fixed;
+}
+
+.page1 {
+  background-size: cover;
+  background-image: url(images/page1-background.jpg);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+}
+
+.page1 h1 {
+  font-weight: 900;
+  color: transparent;
+  -webkit-text-stroke: 2px lightcoral;
+  letter-spacing: 10px;
+  padding: 0px 0px 20px 0px;
+}
+
+.page1 p {
+  color: black;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin: 0px 0px 20px 0px;
+}
+
+.page1 button {
+  padding: 10px 18px;
+  letter-spacing: 2px;
+  color: black;
+  background-color: transparent;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page1 button:hover {
+  color: lightgray;
+  background-color: black;
+}
+
+.page1 button:active {
+  opacity: 0.7;
+}
+
+.scroll-img {
+  height: 18px;
+  width: 18px;
+  position: absolute;
+  margin-top: 700px;
+  margin-bottom: 150px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  width: 2px;
+  background-color: black;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  background-color: lightcoral;
+  border-radius: 10px;
+}
+
+.page2 {
+  height: 105vh;
+  background-image: url(images/page2-background.jpg);
+  width: 100%;
+  background-size: cover;
+}
+
+.page2 button {
+  padding: 15px 20px;
+  margin-left: 60px;
+  margin-top: 15px;
+  font-size: 22px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  color: black;
+  background-color: lightgray;
+  border: 1px solid black;
+  transition: all 0.2s;
+}
+
+.page2 button:hover {
+  background-color: lightcoral;
+  color: black;
+}
+
+.page2 button:active {
+  opacity: 0.7;
+}
+
+.about-img {
+  height: 600px;
+  width: 600px;
+  margin-top: 80px;
+  margin-left: 870px;
+  border: 5px solid lightgray;
+}
+
+.about-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  margin-left: 650px;
+  height: 53px;
+  width: 200px;
+  background-color: lightgray;
+  margin-top: -715px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.about-text {
+  width: 700px;
+  padding: 30px 0px 0px 60px;
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px lightcoral;
+  text-align: justify;
+}
+
+.page3 {
+  height: 110vh;
+  background-image: url(images/page1-background.jpg);
+  width: 100%;
+  background-size: cover;
+  display: flex;
+}
+
+.good-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: lightgray;
+  border: 1px solid lightgray;
+  margin-left: 650px;
+  height: 53px;
+  width: 200px;
+  background-color: black;
+  margin-top: -20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.three-div {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.three-div .one,
+.two,
+.three {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  width: 700px;
+  padding: 0px 30px 0px 40px;
+  margin-top: -20px;
+  line-height: 40px;
+}
+
+.one img,
+.two img,
+.three img {
+  width: 400px;
+  border: 4px solid black;
+}
+
+.three img {
+  margin-top: 0px;
+}
+
+.two img {
+  margin-top: 40px;
+}
+
+.one h1,
+.two h1,
+.three h1 {
+  padding: 20px;
+  width: 400px;
+  color: transparent;
+  -webkit-text-stroke: 3px lightcoral;
+} 
+
+.one p,
+.two p,
+.three p {
+  color: darkslateblue;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+

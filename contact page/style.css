@@ -1,0 +1,112 @@
+* {
+  height: 100vh;
+  font-family: Arial;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 300px;
+  background-size: cover;
+  background-image: url('contact-page.jpg');
+}
+
+.contact-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 520px;
+  width: 700px;
+  flex-direction: column;
+  background: black;
+  padding: 60px;
+  padding-top: 50px;
+}
+
+.contact-div h1 {
+  color: transparent;
+  -webkit-text-stroke: 1px lightcoral;
+  font-size: 45px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-div input, textarea {
+  padding: 20px;
+  position: fixed;
+  height: 60px;
+  border: 3px solid lightcoral;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  margin: 10px 0px;
+}
+
+.contact-div .name {
+  margin-bottom: 260px;
+  text-transform: uppercase;
+  margin-top: 40px;
+  width: 580px;
+}
+
+.contact-div .email {
+  margin-bottom: 80px;
+  width: 580px;
+}
+
+.contact-div .comment {
+  width: 580px;
+  margin-bottom: -220px;
+}
+
+.contact-div .dob {
+  width: 580px;
+  margin-bottom: -70px;
+}
+
+.contact-div button {
+  position: fixed;
+  width: 240px;
+  height: 40px;
+  margin-top: 375px;
+  color: lightcoral;
+  background-color: transparent;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  transition: all 0.2s;
+}
+
+.contact-div button:hover {
+  background-color: lightcoral;
+  color: black;
+}
+
+.contact-div button:active {
+  opacity: 0.8;
+  background-color: lightblue;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+}
+
